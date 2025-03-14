@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-
     <header>
         <nav>
             <h1>Your Name</h1>
             <ul>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -20,51 +21,53 @@
             </ul>
         </nav>
     </header>
-
-    <section id="home">
+    
+    <section id="home" class="hero">
         <div class="intro">
             <h2>Hi, I'm <span>Your Name</span></h2>
             <p>Aspiring Software Engineer | AI Enthusiast</p>
+            <a href="#projects" class="btn">View My Work</a>
         </div>
     </section>
-
-    <section id="about">
+    
+    <section id="about" class="section">
         <h2>About Me</h2>
         <p>I am a passionate developer with a strong interest in AI, web development, and innovative technologies. Currently pursuing my Master's in Computer Science.</p>
     </section>
-
-    <section id="education">
+    
+    <section id="education" class="section">
         <h2>Education</h2>
         <ul>
             <li><strong>Master’s in Computer Science</strong> – Your University (Year)</li>
             <li><strong>Bachelor’s in Computer Science</strong> – Your University (Year)</li>
         </ul>
     </section>
-
-    <section id="projects">
+    
+    <section id="projects" class="section">
         <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Short description of your project.</p>
-            <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Short description of your project.</p>
-            <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Short description of your project.</p>
+                <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Short description of your project.</p>
+                <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+            </div>
         </div>
     </section>
-
-    <section id="contact">
+    
+    <section id="contact" class="section">
         <h2>Contact</h2>
         <p>Email: yourname@email.com</p>
         <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
         <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
     </section>
-
+    
     <footer>
         <p>© 2025 Your Name. All Rights Reserved.</p>
     </footer>
-
 </body>
 </html>
