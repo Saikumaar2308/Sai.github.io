@@ -4,70 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name | Portfolio</title>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <header>
+        <div class="logo">
+            <img src="your-logo.png" alt="Logo">
+        </div>
         <nav>
-            <h1>Your Name</h1>
             <ul>
-                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="resume.pdf" target="_blank" class="resume"> <i class="fa fa-download"></i> Resumé</a></li>
+                <li><button id="dark-mode-toggle"><i class="fa fa-moon"></i></button></li>
             </ul>
-        </nav>
+        </div>
     </header>
-    
-    <section id="home" class="hero">
-        <div class="intro">
-            <h2>Hi, I'm <span>Your Name</span></h2>
-            <p>Aspiring Software Engineer | AI Enthusiast</p>
-            <a href="#projects" class="btn">View My Work</a>
+
+    <section id="home">
+        <div class="content">
+            <h2>Hi, my name is</h2>
+            <h1>Your Name.</h1>
+            <h2 class="highlight">I love building amazing experiences</h2>
+            <p>
+                I bring passion and expertise in Full-Stack Development, AI, and Innovation.
+                Currently, I am pursuing a **Master’s in Computer Science** at **Your University**.
+            </p>
+            <a href="#contact" class="btn">Get In Touch</a>
         </div>
-    </section>
-    
-    <section id="about" class="section">
+        <div class="socials">
+            <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/yourhandle" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="email">your.email@example.com</div>
+    </header>
+
+    <section id="about">
         <h2>About Me</h2>
-        <p>I am a passionate developer with a strong interest in AI, web development, and innovative technologies. Currently pursuing my Master's in Computer Science.</p>
+        <p>I am a passionate full-stack developer, AI enthusiast, and tech innovator. With a Master’s degree in Computer Science from **Your University**, I have hands-on experience in full-stack development, cloud infrastructure, and AI/ML.</p>
     </section>
-    
-    <section id="education" class="section">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Master’s in Computer Science</strong> – Your University (Year)</li>
-            <li><strong>Bachelor’s in Computer Science</strong> – Your University (Year)</li>
-        </ul>
-    </section>
-    
-    <section id="projects" class="section">
+
+    <section id="projects">
         <h2>Projects</h2>
-        <div class="project-container">
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>Short description of your project.</p>
-                <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
-            </div>
-            <div class="project-card">
-                <h3>Project 2</h3>
-                <p>Short description of your project.</p>
-                <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
-            </div>
+        <div class="project">
+            <h3>Project One</h3>
+            <p>A brief description of your project.</p>
+            <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project">
+            <h3>Project Two</h3>
+            <p>Another project description.</p>
+            <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
         </div>
     </section>
-    
-    <section id="contact" class="section">
+
+    <section id="contact">
         <h2>Contact</h2>
-        <p>Email: yourname@email.com</p>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
         <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
     </section>
-    
+
     <footer>
         <p>© 2025 Your Name. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        const toggleButton = document.getElementById('dark-mode-toggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
 </body>
 </html>
